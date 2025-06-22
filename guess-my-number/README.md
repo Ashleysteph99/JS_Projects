@@ -1,2 +1,2 @@
 # JS_Tutorials_projs
-This is a Repo of my Javascript projects
+This is the project for Making a Number guessing game
