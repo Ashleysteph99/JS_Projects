@@ -5,6 +5,16 @@
 // console.log(document.querySelector('.guess').value); 
 
 document.querySelector('.btn.check').addEventListener('click', function () {
-   console.log(document.querySelector('.guess').value);
+    const guess=document.querySelector('.guess').value.trim(); 
+    
+    if(!guess){
+        document.querySelector('.message').textContent='Please Enter a Number';
+        console.log(`Guess is ${guess} which is a type of "${typeof(guess)}"`);
+        return;
+    }
+
+    const usrGuess= Number(guess); 
+
+    console.log(`Guess is ${guess} which is a type of "${typeof(guess)}"`);
     document.querySelector('.message').textContent='Correct Guess!!🎉🎉🎉';
 })
