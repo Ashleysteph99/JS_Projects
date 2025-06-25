@@ -11,12 +11,16 @@ document.querySelector('.btn.check').addEventListener('click', function () {
     
     if(!guess){
         document.querySelector('.message').textContent='Please Enter a Number';
+        console.log(`Target number is ${target}` );
         console.log(`Guess is ${guess} which is a type of "${typeof(guess)}"`);
         return;
     }
 
     const usrGuess= Number(guess); 
-
-    console.log(`Guess is ${guess} which is a type of "${typeof(guess)}"`);
+    console.log(`Target number is ${target}` );
+    console.log(`Guess is ${usrGuess} which is a type of "${typeof(usrGuess)}"`);
     document.querySelector('.message').textContent='Correct Guess!!🎉🎉🎉';
-})
+});
+
+
+
