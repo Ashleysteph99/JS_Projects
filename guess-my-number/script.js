@@ -4,6 +4,8 @@
 // document.querySelector('.guess').value=32
 // console.log(document.querySelector('.guess').value); 
 
+const target =Math.trunc(Math.random()*20)+1;
+
 document.querySelector('.btn.check').addEventListener('click', function () {
     const guess=document.querySelector('.guess').value.trim(); 
     
