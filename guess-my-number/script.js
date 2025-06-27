@@ -39,6 +39,11 @@ document.querySelector('.btn.check').addEventListener('click', function () {
     console.log(`Target number is ${target}`);
     console.log(`Guess is ${usrGuess} which is a type of "${typeof (usrGuess)}"`);
 
+    if (OgScore <= 0) {
+        document.querySelector('.message').textContent = 'You lost the Game!!!';
+        document.querySelector('.btn.check').disabled = true;
+    }
+
 });
 
 
