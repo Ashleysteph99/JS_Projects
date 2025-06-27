@@ -24,8 +24,11 @@ document.querySelector('.btn.check').addEventListener('click', function () {
     if (target == usrGuess) {
         document.querySelector('.message').textContent = 'Correct Guess!!🎉🎉🎉';
     }
+    else if (usrGuess < target) {
+        document.querySelector('.message').textContent = 'Oops, Think Bigger';
+    }
     else {
-        document.querySelector('.message').textContent = 'Oops, Try Again';
+        document.querySelector('.message').textContent = 'Oops, Think Lesser';
     }
     console.log(`Target number is ${target}`);
     console.log(`Guess is ${usrGuess} which is a type of "${typeof (usrGuess)}"`);
