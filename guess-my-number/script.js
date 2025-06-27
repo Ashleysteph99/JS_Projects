@@ -10,7 +10,7 @@ document.querySelector('.number').textContent = target;
 
 document.querySelector('.btn.check').addEventListener('click', function () {
     const guess = document.querySelector('.guess').value.trim();
-    
+
     if (!guess) {
         document.querySelector('.message').textContent = 'Please Enter a Number';
         console.log(`Target number is ${target}`);
