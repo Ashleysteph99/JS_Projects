@@ -8,6 +8,10 @@ const target = Math.trunc(Math.random() * 20) + 1;
 
 document.querySelector('.number').textContent = target;
 
+const OgScore = 0;
+
+document.querySelector('.score').textContent = OgScore;
+
 document.querySelector('.btn.check').addEventListener('click', function () {
     const guess = document.querySelector('.guess').value.trim();
 
