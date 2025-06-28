@@ -4,7 +4,7 @@
 // document.querySelector('.guess').value=32
 // console.log(document.querySelector('.guess').value); 
 
-const target = Math.trunc(Math.random() * 20) + 1;
+let target = Math.trunc(Math.random() * 20) + 1;
 
 // document.querySelector('.number').textContent = target;
 
@@ -33,6 +33,8 @@ document.querySelector('.btn.check').addEventListener('click', function () {
         document.querySelector('.message').textContent = 'Correct Guess!!🎉🎉🎉 You Won Yay';
         document.querySelector('.highscore').textContent = OgScore;
         document.querySelector('body').style.background = '#60b347';
+        document.querySelector('.number').textContent = target;
+        gameOver = true;
     }
     else if (usrGuess < target) {
         document.querySelector('.message').textContent = 'Oops, Think Bigger';
@@ -40,7 +42,7 @@ document.querySelector('.btn.check').addEventListener('click', function () {
         document.querySelector('body').style.background = '#222';
     }
     else {
-        document.querySelector('.message').textContent = 'Oops, Think Lesser';
+        document.querySelector('.message').textContent = 'Oops, Think Lower';
         document.querySelector('.score').textContent = --OgScore;
         document.querySelector('body').style.background = '#222';
     }
