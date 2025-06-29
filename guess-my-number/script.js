@@ -19,7 +19,8 @@ let highScore = 0;
 
 document.querySelector('.score').textContent = currentScore;
 
-document.querySelector('.btn.again').addEventListener('click', function () {
+//Listener for Try again button, resets all flags and current scores
+document.querySelector('.btn.again').addEventListener('click', function () { 
     gameOver = false;
     let OgScore = 30;
     document.querySelector('.score').textContent = OgScore;
