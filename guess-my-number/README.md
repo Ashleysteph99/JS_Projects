@@ -12,5 +12,5 @@ Applied improvements to the code:
 
 Future scopes:
 - Login system
-- Highscore tracking accross multiple profiles with intials
+- Highscore tracking across multiple profiles with intials
 - Selecting Game dificulty or number of max guesses
